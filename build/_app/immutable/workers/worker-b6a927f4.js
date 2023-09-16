@@ -1,0 +1,2 @@
+(function(){"use strict";self.onmessage=function(message){const{data}=message,{problem,code}=data;let func;(function(){func=eval(`${code};
+    ${problem.testFn}`)})();let sendMessage;for(let e=0;e<problem.ret.tests.length;e++){const s=func(...problem.args.map(t=>t.tests[e]));if(s!==problem.ret.tests[e]){sendMessage={tag:"failure",reason:{tag:"wrongAnswer",testCase:e,expected:problem.ret.tests[e],actual:s}},postMessage(sendMessage);return}}sendMessage={tag:"success"},postMessage(sendMessage)}})();

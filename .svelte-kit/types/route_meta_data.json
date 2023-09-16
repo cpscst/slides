@@ -1,0 +1,32 @@
+{
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/api/slides": [
+		"src/routes/api/slides/+server.ts"
+	],
+	"/fair": [
+		"src/routes/+layout.ts"
+	],
+	"/fair/problems": [
+		"src/routes/+layout.ts"
+	],
+	"/fair/quiz": [
+		"src/routes/+layout.ts"
+	],
+	"/fair/signup": [
+		"src/routes/+layout.ts"
+	],
+	"/fair/stats": [
+		"src/routes/+layout.ts"
+	],
+	"/slides": [
+		"src/routes/slides/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/slides/[slug]": [
+		"src/routes/slides/[slug]/+page.ts",
+		"src/routes/+layout.ts"
+	]
+}
