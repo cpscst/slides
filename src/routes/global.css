@@ -1,0 +1,77 @@
+:root {
+	--back: hsl(260, 28%, 13%);
+	--back-1: hsl(260, 28%, 20%);
+	--back-2: hsl(260, 28%, 25%);
+	--back-3: hsl(260, 28%, 30%);
+
+	--vote: hsl(260, 30%, 40%);
+	--vote-1: hsl(260, 50%, 60%);
+
+	--text: hsl(260, 50%, 90%);
+	--text-strong: hsl(260, 50%, 100%);
+
+	--text-weak: hsl(0, 0%, 60%);
+	--text-accent: hsl(260, 100%, 80%);
+	--text-accent-hover: hsl(260, 100%, 90%);
+
+	--text-fail: hsl(0, 100%, 70%);
+
+	--pad: 1rem;
+	--rad: 0.5rem;
+
+	--trans: 0.2s;
+
+	--font: JetBrains Mono, monospace;
+}
+
+body {
+	display: flex;
+	background: var(--back);
+	color: var(--text);
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+
+	height: 100vh;
+	width: 100vw;
+	box-sizing: border-box;
+	flex-direction: column;
+}
+
+* {
+	font-family: var(--font);
+}
+
+a {
+	color: var(--text-accent);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--text-accent-hover);
+}
+
+button {
+	background: var(--back-1);
+	border: none;
+	padding: var(--pad);
+	font-size: 1rem;
+	border-radius: var(--rad);
+	color: var(--text);
+
+	transition: background var(--trans), color var(--trans);
+}
+
+button:hover {
+	background: var(--back-2);
+}
+
+button:active {
+	background: var(--back-3);
+}
+
+button:disabled {
+	background: var(--back-1);
+	color: var(--text-weak);
+}
